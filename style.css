@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: rgb(238, 238, 238);
+  padding: 0 10px;
+}
+
+header img {
+  width: 200px;
+  object-fit: contain;
+}
+
+header nav {
+  flex-grow: 2;
+  height: 100%;
+}
+
+header nav ul {
+  min-width: 350px;
+  height: 100%;
+}
+
+header nav ul li {
+  display: inline-flex;
+  align-items: center;
+  list-style: none;
+  padding: 0 20px;
+  height: 100%;
+}
+
+header nav ul li:hover {
+  border-bottom: 5px solid rgb(95, 95, 95);
+}
+
+header nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(95, 95, 95);
+  font-weight: bold;
+}
+
+header nav ul li:first-child {
+  border-bottom: 5px solid rgb(92, 92, 92);
+}
+
+.profile a svg {
+  width: 30px;
+  color: gray;
+}
+
+main .main-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+main .main-image div {
+  width: 100%;
+}
+
+.img-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  color: white;
+  height: 100%;
+}
+
+.img-content {
+  padding: 50px;
+}
+
+.university-data-container {
+  background-color: #333;
+  color: #fff;
+  padding: 60px 3%;
+}
+
+.university-data-container h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.university-data-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.university-data-content-child {
+  padding: 40px 20px;
+}
+
+.university-data-content-child:hover {
+  background-color: rgb(109, 109, 109);
+}
+
+.university-data-content-child h3 {
+  margin-bottom: 20px;
+}
+
+.university-data-content-child:nth-child(2) {
+  background-color: rgb(109, 109, 109);
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: aliceblue;
+}
+
+.footer-child {
+  margin: 20px;
+}
+
+.footer-child h4 {
+  margin-bottom: 20px;
+}
+
+.footer-child ul {
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+
+  main .main-image {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .img-content {
+    padding: 0;
+  }
+
+  .university-data-content {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .university-data-content-child {
+    padding: 20px 10px;
+  }
+
+  footer {
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+  }
+}
